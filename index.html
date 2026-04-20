@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(black, #111);
+  background: linear-gradient(black, #0a0a0a);
   color: white;
   text-align: center;
 }
@@ -19,6 +19,8 @@ body {
   padding: 15px;
   background: black;
   border-bottom: 1px solid gold;
+  position: sticky;
+  top: 0;
 }
 
 .navbar h1 {
@@ -26,38 +28,61 @@ body {
   margin: 0;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-  padding: 100px 20px;
+  padding: 120px 20px;
+  animation: fadeIn 2s;
 }
 
 .hero h2 {
-  font-size: 35px;
+  font-size: 40px;
   color: gold;
 }
 
 .hero p {
-  font-size: 16px;
-  margin: 10px 0 20px;
+  margin: 15px 0;
 }
 
+/* Button */
 .btn {
   background: gold;
   color: black;
-  padding: 12px 25px;
+  padding: 12px 30px;
   border: none;
   cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: orange;
+  transform: scale(1.05);
 }
 
 /* Sections */
 .section {
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 .section h2 {
   color: gold;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+  background: #111;
+  margin: 10px auto;
+  padding: 20px;
+  width: 80%;
+  border: 1px solid gold;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* Footer */
@@ -65,7 +90,12 @@ body {
   padding: 20px;
   background: black;
   border-top: 1px solid gold;
-  margin-top: 40px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 </style>
 
@@ -80,8 +110,8 @@ body {
 
 <!-- Hero -->
 <div class="hero">
-  <h2>🚀 Grow Your Crypto With Us</h2>
-  <p>Join the best crypto signals & trading community</p>
+  <h2>🚀 Start Earning with Crypto</h2>
+  <p>Join our premium signals & trading community</p>
   
   <a href="https://t.me/yourlink">
     <button class="btn">Join Now</button>
@@ -91,17 +121,19 @@ body {
 <!-- Services -->
 <div class="section">
   <h2>📊 Our Services</h2>
-  <p>✔ Crypto Signals</p>
-  <p>✔ Market Analysis</p>
-  <p>✔ Mentorship</p>
+  
+  <div class="card">Crypto Signals</div>
+  <div class="card">Market Analysis</div>
+  <div class="card">1-on-1 Mentorship</div>
 </div>
 
 <!-- Why Us -->
 <div class="section">
   <h2>🔥 Why Choose Us?</h2>
-  <p>✔ Accurate Signals</p>
-  <p>✔ Fast Updates</p>
-  <p>✔ Trusted Community</p>
+  
+  <div class="card">Accurate Signals 📈</div>
+  <div class="card">Fast Updates ⚡</div>
+  <div class="card">Trusted Community 🤝</div>
 </div>
 
 <!-- Contact -->
@@ -112,7 +144,7 @@ body {
 
 <!-- Footer -->
 <div class="footer">
-  <p>© 2026 Trade With Sohaib | All Rights Reserved</p>
+  <p>© 2026 Trade With Sohaib</p>
 </div>
 
 </body>
