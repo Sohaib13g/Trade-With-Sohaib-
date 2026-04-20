@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(black, #0a0a0a);
+  background: radial-gradient(circle at top, #1a1a1a, black);
   color: white;
   text-align: center;
 }
@@ -18,7 +18,7 @@ body {
 .navbar {
   padding: 15px;
   background: black;
-  border-bottom: 1px solid gold;
+  border-bottom: 1px solid rgba(255,215,0,0.3);
   position: sticky;
   top: 0;
 }
@@ -31,12 +31,12 @@ body {
 /* Hero */
 .hero {
   padding: 120px 20px;
-  animation: fadeIn 2s;
 }
 
 .hero h2 {
-  font-size: 40px;
+  font-size: 38px;
   color: gold;
+  text-shadow: 0 0 10px gold;
 }
 
 .hero p {
@@ -51,13 +51,14 @@ body {
   border: none;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: 0.3s;
 }
 
 .btn:hover {
   background: orange;
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 0 10px gold;
 }
 
 /* Sections */
@@ -67,35 +68,30 @@ body {
 
 .section h2 {
   color: gold;
-  margin-bottom: 20px;
 }
 
-/* Cards */
+/* Glass Cards */
 .card {
-  background: #111;
-  margin: 10px auto;
+  background: rgba(255, 215, 0, 0.05);
+  backdrop-filter: blur(10px);
+  margin: 15px auto;
   padding: 20px;
-  width: 80%;
-  border: 1px solid gold;
-  border-radius: 10px;
+  width: 85%;
+  border: 1px solid rgba(255,215,0,0.3);
+  border-radius: 12px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
 }
 
 /* Footer */
 .footer {
   padding: 20px;
   background: black;
-  border-top: 1px solid gold;
-}
-
-/* Animation */
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  border-top: 1px solid rgba(255,215,0,0.3);
 }
 </style>
 
@@ -121,17 +117,26 @@ body {
 <!-- Services -->
 <div class="section">
   <h2>📊 Our Services</h2>
-  
-  <div class="card">Crypto Signals</div>
-  <div class="card">Market Analysis</div>
-  <div class="card">1-on-1 Mentorship</div>
+
+  <div class="card">Crypto Signals 📈</div>
+  <div class="card">Market Analysis 📊</div>
+  <div class="card">1-on-1 Mentorship 🎯</div>
+</div>
+
+<!-- Results -->
+<div class="section">
+  <h2>🔥 Our Results</h2>
+
+  <div class="card">🔥 500+ Active Members</div>
+  <div class="card">📈 90% Signal Accuracy</div>
+  <div class="card">⚡ 24/7 Market Updates</div>
 </div>
 
 <!-- Why Us -->
 <div class="section">
-  <h2>🔥 Why Choose Us?</h2>
-  
-  <div class="card">Accurate Signals 📈</div>
+  <h2>💎 Why Choose Us?</h2>
+
+  <div class="card">Accurate Signals ✔</div>
   <div class="card">Fast Updates ⚡</div>
   <div class="card">Trusted Community 🤝</div>
 </div>
